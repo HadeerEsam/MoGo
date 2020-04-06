@@ -1,2 +1,2 @@
 # MoGo
-bootstrap-template
+
