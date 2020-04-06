@@ -1,0 +1,797 @@
+
+html{
+    font-size: 13px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+p{
+    color: #b3b3b3;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*************************header design *************************************************************************************/
+
+header{
+    color: white;
+    background: linear-gradient(to bottom, rgba(228,129,125,1) 0%, rgba(255,175,75,1) 100%);
+}
+nav a{
+    color: white !important;
+}
+nav .navbar-brand{
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+nav .navbar-brand:hover{
+    color: white;
+}
+nav .navbar-brand:focus{
+    outline: none !important;
+
+}
+nav button {
+    color: white !important;
+    border:0 !important;
+    border-radius: 0 !important;
+   
+}
+nav button i{
+    font-size: 2.2rem;
+    color: white;
+}
+button:focus {
+    outline: none !important;
+}
+nav li{
+    padding: 0.2rem 0.4rem;
+    font-size:16px;
+}
+nav li a:hover{
+    color: #fce38a !important;
+}
+nav li a:focus{
+    outline: none !important;
+}
+
+/****************** banner design ******************************/
+
+.banner{
+    background-image: url(../img/header1.jpg);
+    min-height: 620px;
+    background-position: center;
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    
+}
+
+.banner h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.188rem;
+    animation: swing1 1s 0.5s ease-in both ;
+
+}
+@keyframes swing1{
+    0%{transform:rotateX(60deg);}
+    25%{transform:rotateX(20deg);}
+    50%{transform: rotateX(60deg);    }
+    75%{transform:rotateX(10deg);}
+    100%{transform: rotateX(0deg);}
+}
+.banner h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    position: relative;
+    animation: swing2 1s 0.7s ease-in ;
+    
+}
+@keyframes swing2{
+    0%{transform:rotateX(60deg);}
+    25%{transform:rotateX(20deg);}
+    50%{transform: rotateX(60deg);    }
+    75%{transform:rotateX(10deg);}
+    100%{transform: rotateX(0deg);}
+}
+
+.banner h1::after{
+    content: " ";
+    width: 70px;
+    height: 4px;
+    background-color:white ;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translate(50%,100%);
+}
+
+.banner .btn-color{
+    color: white;
+    border: 3px white solid;
+    border-radius: 0;
+    font-size: 14px;
+    background-color: #f0c988;
+}
+.banner .btn-color:hover{
+    background-color: white;
+    color: #f0c988;
+}
+ .btn:focus{
+    box-shadow: none;
+}
+/* ********************************************** titles design *********************************************************** */
+
+.subtitle{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem;
+}
+.maintitle{
+    font-size: 1.875rem;
+    font-weight: 700;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.maintitle::after{
+    content: " ";
+    width: 70px;
+    height: 4px;
+    background-color:#f38181 ;
+    position: absolute;
+    top: 105%;
+    right: 50%;
+    transform: translate(50%,105%);
+}
+
+
+/* ********************************* img container & captions container design ************************** */
+
+.imgContainer{
+    overflow: hidden;
+    cursor: pointer;
+}
+ .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white ;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(228,129,125,0.7) 0%, rgba(255,175,75,0.7) 100%);   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.imgContainer:hover .caption{
+    opacity: 1;
+}
+
+
+
+/* ***************************************************** about us section************************************* */
+
+/* ******************************about us captions design ************************** */
+
+.aboutUs .caption i,.aboutUs .caption p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white ;
+}
+
+
+
+
+
+/* ****************************************** counters section ********************************************** */
+
+/* ************************counters cards design ******************** */
+
+
+.counters{
+    background-color: #95e1d3;
+    color: white ;
+   
+}
+.counters .row{
+    margin: 0;
+}
+.counters p{
+    color: white;
+    font-size: 0.8rem;
+}
+.counters .col{
+    border-left:1px #b5eae0 solid ;
+    border-right:1px #b5eae0 solid ;
+    min-height:100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem  0rem;
+}
+.counters h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/* ****************************************** services section ********************************************** */
+
+/* ************************service cards design ******************** */
+
+
+.services .serviceItem{
+    border-bottom: 1px #e5e5e5 solid;
+}
+ h6{
+    font-size: 1.25rem;
+}
+.services p{
+    font-size: 1.1rem;
+}
+
+
+
+
+/* ****************************************** what we do section ********************************************** */
+
+/* ********************************************accordion  design ************************************************ */
+
+.wedo .accordion .card{
+    border-radius: 0;
+    border: 1px solid #e5e5e5 !important;
+    background-color: white;
+    margin-bottom: 0.7rem;
+}
+.wedo .accordion .card-header{
+    border-radius: 0;
+    border-bottom: 1px solid #e5e5e5 !important;
+    background-color: white;
+    position: relative;
+
+   
+}
+.wedo .accordion button::before{
+    content: "";
+    width: 50px;
+    height: 100%;
+    background-image: url("../img/down.png") ;
+    background-repeat: no-repeat;
+    background-position:  center;
+    position: absolute;
+    top: 0;
+    right:0;    
+}
+
+.accordion button:focus{
+    box-shadow: none;
+}
+
+
+.wedo .card-body::-webkit-scrollbar {
+    width: 6.5px;
+}
+
+.wedo .card-body::-webkit-scrollbar-track{
+    
+    margin: 15px;
+}
+
+.wedo .card-body::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: #95e1d3;
+}
+
+.wedo .card-body{
+    color: #b3b3b3;
+    font-style: italic;
+    font-size: 16px;
+    overflow-y: scroll ;
+    height: 148px;
+}
+
+
+
+/********************************** carousel design ****************************************************/
+
+
+
+#carouselExampleControls .carousel-info h6::before{
+    content: " ";
+    width: 50px;
+    height: 4px;
+    background-color:#f38181 ;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,100%);
+
+}
+.carousel-control-prev-icon {
+    background-image: url("../img/prev.png");
+    width: 18px;
+    height: 20px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../img/next.png");
+    width: 18px;
+    height: 20px;
+}
+
+#carouselExampleControls .carousel-info p{
+    font-size: 1.225rem;
+}
+
+
+
+/* ****************************************** team section ********************************************** */
+
+/* ************************team captions design ******************** */
+
+.team .caption{
+    flex-direction: row;
+}
+
+.team  .caption i{
+    padding: 1.2rem;
+    background-color: #fce38a;
+    color: #f38181;
+    font-size: 1.3rem;
+    border-right: 1px solid #f9bd87;
+    border-left: 1px solid #f9bd87;
+}
+.team .caption  i:hover {
+    background-color: #ed6566;
+    color: white;
+    border: none;
+}
+
+/* ********************* people info design ************************** */
+ .name{
+    font-size: 1.3rem;
+    padding: 1.2rem 0rem 0rem;
+    font-weight: normal;
+     
+}
+.job{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #b3b3b3;
+    position: relative;
+}
+
+
+/********************************* clients section********************************************/
+
+.clients{
+    background-image: url(../img/nature1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 850px; */
+}
+
+.clients .job::after{
+
+    content: " ";
+    width: 70px;
+    height: 4px;
+    background-color:#f38181 ;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%,-200%);
+}
+
+
+/********************************* blog section********************************************/
+
+
+.blog .date{
+    width:60px;
+    position: absolute;
+    top: 43%;
+    left: -2%;
+    transform: translate(2%,-43%);
+    background-color: #95e1d3;
+    color: white;
+    text-align: center;
+}
+.blog .date h5{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.blog .blog-info{
+    border-bottom:1px solid #e5e5e5;
+}
+.blog-info p{
+    font-size: 1.1rem;
+}
+.blog .blog-icons span{
+    color: #b3b3b3;
+    font-style: italic;
+    font-size: 1rem;
+
+}
+
+
+
+
+
+/******************************************   map section    *********************************************/
+
+
+.map .accordion .card-header{
+    background-image: url(../img/nature2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-height: 150px;
+}
+.map .title-color{
+    color: #f38181;
+}
+
+.map .accordion button{
+    background-color: transparent;
+}
+/******************************************   contacts section  *********************************************/
+
+.contacts .instaimage img{
+    vertical-align: sub;
+}
+.contacts .view-more a{
+    color: #585858;
+    font-style: italic;
+    font-size: 1rem;
+}
+ a:hover{
+    text-decoration: none;
+}
+
+
+.contacts .media-contant{
+    font-size: 0.9rem;
+    color: #333333;
+}
+.contacts .date{
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #9f9f9f;
+}
+
+.contacts .logo{
+    color: #cccccc;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.contacts .followers{
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+.contacts .followers span{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.contacts .contact-icons{
+    border-top: 1px solid #e5e5e5;
+
+}
+
+.contacts .contact-icons span{
+    font-style: italic;
+    color: #b3b3b3;
+    font-family: 'Roboto', sans-serif;    
+}
+
+.contacts .contact-icons i{
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    color: #95e1d3;
+    cursor: pointer;
+}
+.contacts .contact-icons i:hover{
+    color: #f38181;
+}
+.contacts form input{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #9f9f9f;
+    border: 1px solid #e5e5e5;
+}
+.contacts form input:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px #95e1d3;
+    border: 1px solid #95e1d3;
+}
+.contacts form .btn-color{
+    color: white;
+    background-color: #95e1d3;
+    border: 1px solid #95e1d3;
+    font-size: 0.85rem;
+}
+.contacts form .btn-color:hover{
+    color: #95e1d3;
+    background-color: white;
+}
+
+
+
+/******************************************   footer section   *********************************************/
+
+footer p {
+    color: #333333;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+footer .container{
+    border-top: 1px solid #e5e5e5;
+}
+footer a{
+    color: #f38181;
+}
+footer a:hover{
+    color: #f38181;
+}
+
+
+
+/******************************************   tablet design   *********************************************/
+@media screen and (min-width:768px){
+    html{
+        font-size: 16px;
+    }
+    nav li{
+        padding: 0.2rem 0rem;
+        font-size: 0.813rem;
+    }
+
+
+    .banner{
+        min-height: 720px;        
+    }
+
+    .banner h2{
+      
+        font-size: 3.125rem;
+    
+    }
+    .banner h1{
+        font-size: 6.25rem;
+        
+    
+    }
+
+
+
+    .counters p{
+        font-size: 0.875rem;
+     }
+     .counters .row{
+        margin: 0 -15px;
+    }
+    .counters .col{
+        padding: 3rem 15px;
+        min-height:200px ;
+        
+    }
+    .counters h3{
+        font-size: 3.125rem;
+        
+    }
+
+
+
+    .services .serviceItem{
+        border-bottom:0;
+    }
+    .services .first{
+        border-bottom: 1px #e5e5e5 solid;
+    }
+     h6{
+        font-size: 1rem;
+    }
+    .services p,.clients p{
+        font-size: 0.938rem;
+    }
+
+
+    .devices{
+        background-image: url(../img/nature.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 850px;
+    }
+
+    .devices img{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%,0);
+    }
+    .devices .phone{
+        bottom: -7%;
+        left: 100%;
+        transform: translate(-100%,7%);
+    }
+
+
+    .wedo .card-body{
+        
+        height: 250px;
+    }
+
+    #carouselExampleControls .carousel-info h6::before{
+       
+        top: 50%;
+        left: -20%;
+        transform: translate(20%,-50%);
+    
+    }
+
+    #carouselExampleControls .iconContainer .imgCarousel{
+        width: 100%;
+    }
+
+    #carouselExampleControls .iconContainer{
+        vertical-align: top;
+    }
+
+
+    .team  .caption i{
+        padding: 0.8rem;
+        font-size: 1rem;
+        
+    }
+    .name{
+        font-size: 1.2rem;            
+    }
+    .job{
+        font-size: 1rem;
+        
+    }
+    .clients .job::after{
+       
+        left: 1%;
+        transform: translate(-1%,-200%);
+    }
+
+
+
+
+    .blog .date{
+        
+        top: 25%;
+        left: -5%;
+        transform: translate(5%,-25%);
+        
+    }
+    .blog .date h5{
+        font-size: 1.7rem;
+        
+    }
+    
+    .blog-info p , .blog .blog-icons span{
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+/******************************************   desktop design   *********************************************/
+@media screen and (min-width:992px){
+    nav li{
+        padding: 0.2rem 0.4rem;
+        font-size: 1rem;
+    }
+
+
+    .banner{
+        min-height: 950px;        
+    }
+
+    .banner h2{
+        font-size: 4.5rem;
+    
+    }
+    .banner h1{
+        font-size: 9.375rem;    
+    }
+
+    .counters .col{
+        padding: 5rem 15px;
+        min-height:270px ;
+        
+    }
+    .counters h3{
+        font-size: 4.5rem;
+        
+    }
+
+
+    .devices .phone{
+        bottom: -7%;
+        left: 85%;
+        transform: translate(-85%,7%);
+    }
+
+    
+    
+    .wedo .card-body {
+            height: 88px;
+    }
+
+        
+    #carouselExampleControls .carousel-info p{
+            font-size: 1.3rem;
+    }
+      
+    #carouselExampleControls .carousel-info h6::before{
+            
+            top: 50%;
+            left: -12%;
+            transform: translate(12%,-50%);
+        
+    }
+
+    .team  .caption i{
+            padding: 1.2rem;
+            font-size: 1.3rem;
+    }
+
+    
+    
+    .blog .date{
+        
+        top: 40%;
+        left: -5%;
+        transform: translate(5%,-40%);
+        
+    }
+        
+
+
+
+}
+
+@media screen and (min-width:1080px){
+    .devices .phone{
+        bottom: -7%;
+        left: 72%;
+        transform: translate(-72%,7%);
+    }
+}
+
+@media screen and (min-width:1200px){
+    .wedo .card-body{
+        height: 148px;
+    }
+    #carouselExampleControls .carousel-info h6::before{
+       
+        top: 50%;
+        left: -10%;
+        transform: translate(10%,-50%);
+    
+    }
+    .blog .date{
+        
+        top: 48%;
+        left: -5%;
+        transform: translate(5%,-48%);
+        
+    }
+}
+
