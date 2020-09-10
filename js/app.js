@@ -141,7 +141,7 @@ window.addEventListener("scroll",()=>{
     header.style.backgroundImage="linear-gradient(to bottom, rgba(228,129,125,1) 0%, rgba(255,175,75,1) 100%)";
   }else{
     header.style.backgroundImage="none";
-    header.style.display='block';
+    
   }
 // show and hide scroll up btn
   if(windowOffsetTop>firstOffsetTop){
@@ -165,7 +165,7 @@ window.addEventListener("scroll",()=>{
 
   // Clear our timeout throughout the scroll
   window.clearTimeout( isScrolling );
-  
+  header.style.display='block';
   
 
 	// Set a timeout to run after scrolling ends
