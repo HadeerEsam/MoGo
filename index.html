@@ -12,54 +12,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header id="header" class="fixed-top py-2">
-       <div class="container ">
-        <nav class="navbar navbar-expand-md text-center navbar-color navbar-dark">
+    <header id="header" class=" ">
+       
+        <nav class="navbar navbar-expand-md text-center navbar-color navbar-dark  py-0">
             <a class="navbar-brand" href="index.html">MoGo</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars    "></i>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#banner">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">SERVICE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#weDo">WE DO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Team">OUR TEAM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">WORK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
-                    </li>
-                   
+                <ul id="nav-list" class="navbar-nav ml-auto  ">
+                                    
                 </ul>
                 
             </div>
         </nav>
-       </div>
+       
 
      
 
     </header>
 
     <!--------------------------------------- banner section ----------------------- -->
-    <section id="banner" class="banner py-5">
-        <div class="container py-5">
+    <section id="Home" data-nav="section1" class="banner py-5 ">
+        <div class="container py-5 active-section">
             <div class=" d-flex py-5 overflow-auto flex-column justify-content-center align-items-center text-white" >
                 <h2 class="mb-2 pt-5 mt-5">Creative Template</h2>
                 <h1 class="mb-5 py-5">WELCOME <br> TO MOGO</h1>
@@ -68,11 +44,9 @@
         </div>
     </section>
 
-
-
     <!--------------------------------------- About us section ----------------------- -->
 
-    <section id="aboutUs" class="aboutUs pb-md-5 pt-5">
+    <section id="AboutUs" data-nav="section2" class="aboutUs  pb-md-5 pt-5 ">
         <div class="container pb-md-5 text-center pt-5">
             <h5 class="mb-3 subtitle">What we do</h5>
             <h2 class="mb-5 maintitle">STORY ABOUT US</h2>
@@ -130,7 +104,7 @@
     <!--------------------------------------- counters section ----------------------- -->
 
 
-    <section class="counters mt-5 mt-md-0">
+    <section id="Achievements" data-nav="section3" class="counters mt-5 mt-md-0">
         <div class="container  ">
             <div class="row flex-nowrap   text-center">
                 <div class="col ">
@@ -161,7 +135,7 @@
 
     <!--------------------------------------- services section ----------------------- -->
 
-    <section  id="services" class="services pt-5 pb-md-5">
+    <section  id="Services" data-nav="section4" class="services pt-5 pb-md-5">
         <div class="container pb-md-5 pt-5 text-center">
             <h5 class="mb-3 subtitle">We work with</h5>
             <h2 class="mb-5 maintitle">AMAZING SERVICES</h2>
@@ -252,7 +226,7 @@
 
     <!--------------------------------------- devices section ----------------------- -->
 
-    <section class="devices pb-md-5 pt-5 d-none d-md-block position-relative">
+    <section id="Devices" data-nav="section5" class="devices pb-md-5 pt-5 d-none d-md-block position-relative">
         <div class="container pb-md-5 pt-5 text-center ">
             <h5 class="mb-3 subtitle">For all devices</h5>
             <h2 class="mb-5 maintitle">UNIQUE DESIGN</h2>
@@ -267,7 +241,7 @@
     <!--------------------------------------- what we do section ----------------------- -->
 
 
-    <section id="weDo" class="wedo pb-md-5 pt-5 ">
+    <section id="WeDo" data-nav="section6" class="wedo pb-md-5 pt-5 ">
         <div class="container pb-md-5 pt-5 text-center ">
             <h5 class="mb-3 subtitle">Service</h5>
             <h2 class="mb-5 maintitle">WHAT WE DO</h2>
@@ -411,7 +385,7 @@
 
     <!--------------------------------------- team section ----------------------- -->
 
-    <section id="Team" class="team pb-lg-5  pt-5">
+    <section id="Team" data-nav="section7" class="team pb-lg-5  pt-5">
         <div class="container  pb-lg-5  pt-5 text-center">
             <h5 class="mb-3 subtitle">Who we are</h5>
             <h2 class="mb-5 maintitle">MEET OUR TEAM</h2>
@@ -421,7 +395,7 @@
 
                 <div class="col-md-4 mb-1">
                     <div class="imgContainer position-relative">
-                        <img src="img/team2.jpg" class="w-100"" alt="">
+                        <img src="img/team2.jpg" class="w-100" alt="">
 
                         <div class="caption">
                             <i class="fab fa-facebook-f    "></i>
@@ -443,7 +417,7 @@
 
                 <div class="col-md-4 mb-1">
                     <div class="imgContainer position-relative ">
-                        <img src="img/team1.jpg" class="w-100" " alt="">
+                        <img src="img/team1.jpg" class="w-100"  alt="">
 
                         <div class="caption ">
                             <i class="fab fa-facebook-f    "></i>
@@ -462,7 +436,7 @@
 
                 <div class="col-md-4 mb-1">
                     <div class="imgContainer position-relative">
-                        <img src="img/team3.jpg" class="w-100"" alt="">
+                        <img src="img/team3.jpg" class="w-100" alt="">
 
                         <div class="caption">
                             <i class="fab fa-facebook-f    "></i>
@@ -484,7 +458,7 @@
 
             <div class="clogos px-2 d-none d-lg-block mt-5">
                 
-              <img src="img/clogo.png" class="w-100"" alt="">
+              <img src="img/clogo.png" class="w-100" alt="">
                 
             </div>
 
@@ -496,9 +470,9 @@
     <!--------------------------------------- our work section ----------------------- -->
 
 
-    <section id="work" class="work py-4 ">
+    <section id="Work" data-nav="section8" class="work py-4 ">
 
-        <div class="container  pb-md-4 pt-5 text-center">
+        <div class="container  pb-md-4 pt-5 text-center ">
             <h5 class="mb-3 subtitle">What we do</h5>
             <h2 class="mb-5 maintitle">SOME OF OUR WORK</h2>
             <p class="mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur suscipit, assumenda voluptate ullam quibusdam eos exercitationem quasi porro facilis corrupti natus explicabo amet quae!</p>
@@ -508,99 +482,37 @@
         <div class="container-fluid no-gutters px-0 mb-5">
             <div class="row no-gutters">
 
-
-
-                <div class="col-md-6 col-xl-3">
-
-                    <div class="imgContainer position-relative">
-                            <img src="img/w1.jpg" class="w-100"  alt="">  
-                            <div class="caption">
-                                <img src="img/hovericon.png" class="mb-3" alt="">
-                                <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                                <p class="text-white">Lorem ipsum dolor sit.</p>
-                            </div>
-                    </div>
-
-                    <div class="imgContainer position-relative">
-                        <img src="img/w5.jpg"  class="w-100"  alt="">
-                        <div class="caption">
-                            <img src="img/hovericon.png" class="mb-3" alt="">
-                            <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                            <p class="text-white">Lorem ipsum dolor sit.</p>
-                        </div>
-                    </div>
-
+                <div class="col-md-6 col-xl-3 imgContainer ">
+                   <img src="img/w1.jpg" class="w-100"  alt=""> 
+                   <img src="img/w5.jpg"  class="w-100"  alt="">
                 </div>
 
-                <div class="col-md-6 col-xl-3">
+                <div class="col-md-6 col-xl-3 imgContainer ">
+                    <img src="img/w2.jpg" class="w-100"  alt=""> 
+                    <img src="img/w3.jpg"  class="w-100"  alt="">
+                 </div>
 
-                    <div class="imgContainer position-relative">
-                       <img src="img/w2.jpg" class="w-100"  alt="">
-                       <div class="caption">
-                        <img src="img/hovericon.png" class="mb-3" alt="">
-                        <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                        <p class="text-white">Lorem ipsum dolor sit.</p>
-                    </div>
-                    </div>
-
-                    <div class="imgContainer position-relative">
-                        <img src="img/w3.jpg"  class="w-100"  alt="">
-                        <div class="caption">
-                            <img src="img/hovericon.png" class="mb-3" alt="">
-                            <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                            <p class="text-white">Lorem ipsum dolor sit.</p>
-                        </div>
-                    </div>
-
-                </div>
+                 <div class="col-md-6 col-xl-3 imgContainer ">
+                    <img src="img/w4.jpg" class="w-100"  alt=""> 
+                 </div>
 
 
-                <div class="col-md-6 col-xl-3">
-
-                    <div class="imgContainer position-relative">
-                      <img src="img/w4.jpg" class="w-100"  alt="">
-                      <div class="caption">
-                        <img src="img/hovericon.png" class="mb-3" alt="">
-                        <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                        <p class="text-white">Lorem ipsum dolor sit.</p>
-                    </div>
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-6 col-xl-3">
-
-                    <div class="imgContainer position-relative">
-                       <img src="img/w6.jpg" class="w-100"  alt="">
-                       <div class="caption">
-                        <img src="img/hovericon.png" class="mb-3" alt="">
-                        <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                        <p class="text-white">Lorem ipsum dolor sit.</p>
-                    </div>
-                    </div>
-
-                    <div class="imgContainer position-relative">
-                        <img src="img/w3.jpg"  class="w-100"  alt="">
-                        <div class="caption">
-                            <img src="img/hovericon.png" class="mb-3" alt="">
-                            <h6 class="mb-1">CREATIVILY DESIGNED</h6>
-                            <p class="text-white">Lorem ipsum dolor sit.</p>
-                        </div>
-                    </div>
-
-                </div>
+                 <div class="col-md-6 col-xl-3 imgContainer ">
+                    <img src="img/w6.jpg" class="w-100"  alt=""> 
+                    <img src="img/w7.jpg"  class="w-100"  alt="">
+                 </div>
 
 
             </div>
 
         </div>
-
+        
+       
           
 
 
         <div class="container py-md-5 pt-5 text-center">
-            <div id="carouselExampleControls-2" class="carousel slide pt-5 " data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide pt-5 " data-ride="carousel">
                 <div class="carousel-inner">
 
 
@@ -644,13 +556,13 @@
 
                 </div>
 
-                <a class="carousel-control-prev " href="#carouselExampleControls-2" role="button" data-slide="prev">
+                <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
 
 
-                  <a class="carousel-control-next" href="#carouselExampleControls-2" role="button" data-slide="next">
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
@@ -658,15 +570,21 @@
               </div>
         </div>
 
-            
-        
-
-
     </section>
 
+    <div id="img-slider"  >
+        <div class="container position-relative  h-75 d-flex justify-content-center align-items-center py-5 mt-5 ">
+            <i id="close-btn" class="fas fa-times  fa-2x "></i>
+            <img id="next-btn" src="img/next.png" alt="">
+            <img id="prev-btn"src="img/prev.png" alt="">
+            <div id="img-shown"></div>
+            
+        </div>
+
+    </div>
     <!--------------------------------------- clinets section ----------------------- -->
 
-    <section  class="clients pb-md-5 pt-5">
+    <section id="Clients" data-nav="section9" class="clients pb-md-5 pt-5">
 
         <div class="container  pb-md-3 pt-5 text-center">
             <h5 class="mb-3 subtitle">Happy Clients</h5>
@@ -752,7 +670,7 @@
 
     <!--------------------------------------- blog section ----------------------- -->
 
-    <section id="blog" class="blog pb-lg-4 pt-5">
+    <section id="Blog" data-nav="section10" class="blog pb-lg-4 pt-5">
 
         <div class="container  py-lg-4 pt-5 text-center">
             <h5 class="mb-3 subtitle">Our stories</h5>
@@ -861,7 +779,7 @@
 
 
     <!--------------------------------------- map section ----------------------- -->
-    <section class="map">
+    <section id="Map" data-nav="section11" class="map">
         <div class="container-fluid px-0  pb-lg-4 pt-4 "></div>
 
             
@@ -895,7 +813,7 @@
      </section>
 
 
-     <section id="contact" class="contacts pb-md-3 pt-5">
+     <section id="Contact" data-nav="section12" class="contacts pb-md-5 pt-5 mb-5">
 
         <div class="container  pt-5">
             <div class="row">
@@ -979,29 +897,20 @@
                       <p class="view-more"><a href="#">View more photos</a></p>
                 </div>
 
-                
-
-
-
-
-
             </div>
         </div>
 
      </section>
 
-
-     <footer class="pt-2">
-
-        <div class="container text-center pt-4 pb-2">
-            <p>© 2016 Free Template by <a href="http://freetemplates.pro/" target="_blank">FreeTemplates.pro</a> </p>
-
-        </div>
-
-        
-
-
+     <footer>
+         <div class="container py-5">
+             <p > Coded By <a href="https://www.linkedin.com/in/hadeer-esam-355326196/" target="-blank">Hadeer Esam Abdallah</a></p>
+         </div>
      </footer>
+
+
+
+     <button class="btn p-1 rounded-circle" id="slide-up"><i class="fas fa-arrow-alt-circle-up  fa-3x  "></i></button>
 
 
 
@@ -1012,5 +921,6 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
