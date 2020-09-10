@@ -1,12 +1,14 @@
 
 html{
     font-size: 13px;
+    /* scroll-behavior: smooth; */
 }
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #333333;
     animation: fade 0.5s ease-in-out;
+    position: relative;
 }
 @keyframes fade{
     0%{opacity: 0;}
@@ -18,14 +20,42 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+#slide-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to bottom, rgba(228,129,125,1) 0%, rgba(255,175,75,1) 100%);
+    display: none;
+    z-index: 20;
+    
+}
+#slide-up i{
+    color: rgb(253, 253, 253);
+}
 /*************************header design *************************************************************************************/
 
 header{
     color: white;
-    background: linear-gradient(to bottom, rgba(228,129,125,1) 0%, rgba(255,175,75,1) 100%);
+    background-image: linear-gradient(to bottom, rgba(228,129,125,1) 0%, rgba(255,175,75,1) 100%);
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
 }
 nav a{
     color: white !important;
+    transition: all 0.5s;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fce38a;
+    bottom: 10px;
+    transition: all 0.5s;
 }
 nav .navbar-brand{
     font-size: 1.9rem;
@@ -53,13 +83,51 @@ button:focus {
 }
 nav li{
     padding: 0.2rem 0.4rem;
-    font-size:16px;
+    font-size:16px ;
 }
 nav li a:hover{
     color: #fce38a !important;
 }
+nav a:hover:before{
+    width:35px;
+    height: 3px;
+}
 nav li a:focus{
     outline: none !important;
+}
+nav .active-nav{
+    color: #fce38a !important;
+    font-weight: bold;
+}
+nav .active-nav::before{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #fce38a;
+    bottom: 10px;
+}
+
+
+/********** Section Active Styles ********/
+section{
+    position: relative;
+    z-index: 1;
+    
+}
+section .active-section::before{
+    content: "";
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    bottom: 1%;
+    right: 1%;
+    width: 98%;
+    height: 98%;
+    animation: fade 1s ease-in-out both;
+    border: 3px solid rgba(228,129,125,0.2);
+    background: linear-gradient(0deg, rgba(228,129,125,0.1) 0%, rgba(194, 175, 153, 0.1) 100%);
+    z-index: -1;
 }
 
 /****************** banner design ******************************/
@@ -90,16 +158,10 @@ nav li a:focus{
     font-size: 3.125rem;
     font-weight: 700;
     position: relative;
-    animation: swing2 1s 0.7s ease-in ;
+    animation: swing1 1s 0.7s ease-in ;
     
 }
-@keyframes swing2{
-    0%{transform:rotateX(60deg);}
-    25%{transform:rotateX(20deg);}
-    50%{transform: rotateX(60deg);    }
-    75%{transform:rotateX(10deg);}
-    100%{transform: rotateX(0deg);}
-}
+
 
 .banner h1::after{
     content: " ";
@@ -151,7 +213,7 @@ nav li a:focus{
 }
 
 
-/* ********************************* img container & captions container design ************************** */
+/* ********************************* img container & img slider container design ************************** */
 
 .imgContainer{
     overflow: hidden;
@@ -174,7 +236,36 @@ nav li a:focus{
 .imgContainer:hover .caption{
     opacity: 1;
 }
-
+#img-slider{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.863) ;
+    z-index: 50000;
+    display: none;
+  
+}
+#close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: rgb(194, 192, 192);
+    cursor: pointer;
+}
+#next-btn{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+}
+#prev-btn{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    cursor: pointer;
+}
 
 
 /* ***************************************************** about us section************************************* */
@@ -186,9 +277,6 @@ nav li a:focus{
     font-weight: bold;
     color: white ;
 }
-
-
-
 
 
 /* ****************************************** counters section ********************************************** */
@@ -370,7 +458,7 @@ nav li a:focus{
 }
 
 
-/********************************* clients section********************************************/
+/********************************* clients section********************************************/ 
 
 .clients{
     background-image: url(../img/nature1.jpg);
@@ -422,9 +510,6 @@ nav li a:focus{
     font-size: 1rem;
 
 }
-
-
-
 
 
 /******************************************   map section    *********************************************/
@@ -534,6 +619,7 @@ footer p {
     color: #333333;
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 
 }
 footer .container{
@@ -541,9 +627,13 @@ footer .container{
 }
 footer a{
     color: #f38181;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
 }
 footer a:hover{
-    color: #f38181;
+    color: #eebf3c;
+    
 }
 
 
@@ -553,9 +643,12 @@ footer a:hover{
     html{
         font-size: 16px;
     }
+    header{
+        background-image: none;
+    }
     nav li{
-        padding: 0.2rem 0rem;
-        font-size: 0.813rem;
+        padding: 0.2rem 0;
+        font-size: 0.623rem;
     }
 
 
@@ -694,8 +787,8 @@ footer a:hover{
 /******************************************   desktop design   *********************************************/
 @media screen and (min-width:992px){
     nav li{
-        padding: 0.2rem 0.4rem;
-        font-size: 1rem;
+        padding: 0.2rem 0.1rem;
+        font-size: 0.93rem;
     }
 
 
